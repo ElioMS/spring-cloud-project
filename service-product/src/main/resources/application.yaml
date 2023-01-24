@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: product-service
+  config:
+    import: optional:configserver:http://root:secret@localhost:8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka

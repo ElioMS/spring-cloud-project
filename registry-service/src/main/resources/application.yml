@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: registry-service
+  config:
+    import: optional:configserver:http://root:secret@localhost:8081
